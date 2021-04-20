@@ -46,7 +46,7 @@ Examples:
 function hasNoDuplicates(arr) {
     return arr.every((el, i) =>{
         let newArr = arr.slice(i+1).filter(val=>{ return val === el });
-        if(newArr.length => 1){ return false }
+        if(newArr.length >= 1){ return false }
         return true;
     });
 }
